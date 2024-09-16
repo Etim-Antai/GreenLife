@@ -28,23 +28,41 @@ header {
     color: white;
     padding: 1rem;
     text-align: center;
+    position: relative;
+    /* Added for logo positioning */
 }
 
 header h1 {
     margin: 0.5rem 0;
     font-family: 'Sonsie One', cursive;
-    font-size: 2.5rem;
+    font-size: 2rem;
+    /* Adjusted for smaller logo */
 }
 
 header p {
     margin: 0;
-    font-size: 1.2rem;
+    font-size: 1rem;
+    /* Adjusted for smaller logo */
+}
+
+/* Logo Styles */
+header img.logo {
+    width: 100px;
+    /* Adjust the width as needed */
+    height: auto;
+    /* Maintain aspect ratio */
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    /* Adjust as needed for positioning */
 }
 
 /* Navigation Styles */
 nav {
     background-color: #264653;
     color: white;
+    padding-top: 4rem;
+    /* Adjusted padding to account for logo height */
 }
 
 nav ul {
@@ -194,11 +212,13 @@ footer a:hover {
 /* Responsive Styles */
 @media (max-width: 768px) {
     header h1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
+        /* Adjusted for smaller screens */
     }
 
     header p {
-        font-size: 1rem;
+        font-size: 0.9rem;
+        /* Adjusted for smaller screens */
     }
 
     #search-input {
