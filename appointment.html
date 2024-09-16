@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Book your appointment with our healthcare professionals." />
+    <meta name="keywords" content="Appointment Booking, Telemedicine, Healthcare" />
+    <title>Book an Appointment</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" />
+    <link rel="stylesheet" href="appointment.css" />
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Book an Appointment</h1>
+        <p>Fill out the form below to schedule your appointment with our healthcare professionals.</p>
+    </header>
+
+    <!-- Navigation Section -->
+    <nav>
+        <ul>
+            <li><a href="index.html" title="Home">Home</a></li>
+            <li><a href="services.html" title="Services">Services</a></li>
+            <li><a href="faq.html" title="FAQ">FAQ</a></li>
+            <li><a href="contact.html" title="Contact Us">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Section -->
+    <main>
+        <section>
+            <h2>Appointment Form</h2>
+            <p>Please provide the following details to book your appointment. Our team will get in touch with you to
+                confirm the details.</p>
+            <form action="/submit-appointment" method="POST">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required />
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required />
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required />
+                </fieldset>
+
+                <fieldset>
+                    <legend>Appointment Details</legend>
+                    <label for="date">Preferred Date:</label>
+                    <input type="date" id="date" name="date" required />
+
+                    <label for="time">Preferred Time:</label>
+                    <input type="time" id="time" name="time" required />
+                </fieldset>
+
+                <fieldset>
+                    <legend>Additional Information</legend>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4"
+                        placeholder="Any specific concerns or information..."></textarea>
+                </fieldset>
+
+                <button type="submit">Submit Appointment</button>
+            </form>
+        </section>
+
+        <!-- Additional Information Section -->
+        <section>
+            <h2>Need Help?</h2>
+            <p>If you have any questions or need assistance with the booking process, please feel free to contact us at
+                <a href="mailto:info@telehealthconnect.com">info@telehealthconnect.com</a> or call us at +123-456-7890.
+            </p>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>© 2024 TeleHealth Connect. All rights reserved. |
+            <a href="index.html" title="Home">Home</a> |
+            <a href="policy.html" title="Privacy Policy">Privacy Policy</a> |
+            <a href="terms.html" title="Terms of Service">Terms of Service</a> |
+            <a href="contact.html" title="Contact Us">Contact Us</a>
+        </p>
+    </footer>
+</body>
+
+</html>

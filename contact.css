@@ -1,0 +1,189 @@
+/* Reset some default styles */
+body,
+h1,
+h2,
+p,
+ul,
+li,
+a,
+form,
+input,
+textarea {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Body Styles */
+body {
+    font-family: 'Open Sans Condensed', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Header Styles */
+header {
+    background-color: #2a9d8f;
+    /* Example: dark teal */
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+    font-family: 'Sonsie One', cursive;
+}
+
+header p {
+    margin-top: 0;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #264653;
+    /* Example: dark blue-green */
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav ul li a:hover {
+    background-color: #2a9d8f;
+    /* Hover effect color */
+}
+
+/* Main Content Styles */
+main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Section Styles */
+#contact {
+    margin-top: 1rem;
+}
+
+.contact-form-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #e9f5f3;
+    /* Light teal */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form-container h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.name-field {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.name-field label {
+    flex: 0 0 30%;
+    display: flex;
+    align-items: center;
+}
+
+.name-field input {
+    flex: 1;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Ensuring equal width for all input fields */
+form label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: calc(100% - 2rem);
+    /* Ensures inputs fill the container minus padding */
+}
+
+/* Specific styles for textarea */
+form textarea {
+    resize: vertical;
+    /* Allows vertical resizing only */
+}
+
+/* Button Styling */
+form button {
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #2a9d8f;
+    /* Button color */
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #264653;
+    /* Button hover color */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #264653;
+    /* Dark blue-green */
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
