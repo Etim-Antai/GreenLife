@@ -15,6 +15,7 @@ a {
 /* Header Styles */
 header {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     background-color: #2a9d8f;
     color: #fff;
@@ -22,20 +23,20 @@ header {
     text-align: center;
 }
 
-.header-container {
+.logo-container {
+    flex: 1;
     display: flex;
-    align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
+    align-items: center;
 }
 
 .logo {
     width: 100px;
     height: auto;
-    margin-right: 20px;
 }
 
 .header-text {
+    flex: 2;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -86,6 +87,34 @@ nav ul li a:hover {
     background-color: #2a9d8f;
 }
 
+/* Search Form Styles */
+#search-form {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#search-input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    width: 200px;
+}
+
+#search-button {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    background-color: #2a9d8f;
+    color: white;
+    cursor: pointer;
+}
+
+#search-button i {
+    font-size: 1rem;
+}
+
 /* Main Content Styles */
 main {
     display: flex;
@@ -104,37 +133,43 @@ section {
     min-width: 280px;
 }
 
-/* Doctor Details Styles */
-.doctor-details {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-}
-
-.doctor-photo {
-    width: 200px;
-    height: auto;
+/* Aside Styles */
+aside {
+    background: #e9ecef;
+    margin: 10px;
+    padding: 20px;
     border-radius: 5px;
-    margin-right: 20px;
-}
-
-.doctor-info {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     flex: 1;
+    min-width: 280px;
 }
 
-.book-appointment {
-    display: inline-block;
-    padding: 10px 20px;
-    margin-top: 10px;
-    background-color: #2a9d8f;
-    color: white;
-    text-align: center;
-    border-radius: 5px;
-    text-decoration: none;
+aside h2 {
+    border-bottom: 2px solid #2a9d8f;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
 }
 
-.book-appointment:hover {
-    background-color: #1d6f63;
+aside ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+aside ul li {
+    margin: 10px 0;
+}
+
+aside ul li a {
+    color: #2a9d8f;
+    /* Link color */
+    text-decoration: underline;
+    /* Underlined links */
+}
+
+aside ul li a:hover {
+    color: #1d6f63;
+    /* Hover color */
 }
 
 /* Footer Styles */
@@ -165,8 +200,7 @@ footer a:hover {
         align-items: center;
     }
 
-    .logo {
-        margin-right: 0;
+    .logo-container {
         margin-bottom: 10px;
     }
 
