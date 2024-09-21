@@ -108,39 +108,32 @@ form {
     flex-direction: column;
 }
 
-.name-field {
+.name-fields {
     display: flex;
     gap: 1rem;
     margin-bottom: 1rem;
 }
 
-.name-field label {
-    flex: 0 0 30%;
-    display: flex;
-    align-items: center;
+.field-group {
+    flex: 1;
 }
 
-.name-field input {
-    flex: 1;
+.field-group label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.field-group input,
+.field-group textarea {
     padding: 0.75rem;
     border: 1px solid #ddd;
     border-radius: 4px;
-}
-
-/* Ensuring equal width for all input fields */
-form label {
-    margin-bottom: 0.5rem;
-    font-weight: bold;
+    width: 100%;
 }
 
 form input,
 form textarea {
-    padding: 0.75rem;
     margin-bottom: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    width: calc(100% - 2rem);
-    /* Ensures inputs fill the container minus padding */
 }
 
 /* Specific styles for textarea */
