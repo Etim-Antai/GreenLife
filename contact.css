@@ -172,11 +172,24 @@ footer p {
     margin: 0;
 }
 
+/* Social Media Icon Styles */
 footer a {
     color: white;
     text-decoration: none;
+    margin: 0 10px;
+    /* Adds space between icons */
+    font-size: 1.5rem;
+    /* Increases icon size */
 }
 
 footer a:hover {
     text-decoration: underline;
+}
+
+/* Adjust icon spacing for mobile screens */
+@media (max-width: 600px) {
+    footer a {
+        margin: 0 5px;
+        /* Less spacing between icons for smaller screens */
+    }
 }
